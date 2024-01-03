@@ -1,0 +1,144 @@
+{
+  "settings": {
+    "name": "Staderlabs",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [],
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://stade-rlabs.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://stade-rlabs.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": "@PROJECT_PATH@/assets/images/staderlabs_1.png",
+    "mbrsiteDomain": "l4qxe6lofv",
+    "imageResize": true,
+    "usedWebp": true,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Stader Labs™ | Home Official Site",
+        "meta_descr": "Stader labs is a liquid staking platform for polygon, hedera, bnb, Ethereum & more. Leverage staderlabs for Digital Tokens across a growing ecosystem.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://staderlabs.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/staderlabs.png\" alt=\"Staderlabs\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u0iONGJuFB",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Staderlabs™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipment tracking</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://stade-rlabs.github.io/\" class=\"text-primary\"><b>Stader Labs</b></a>: Pioneering Innovation in Biotechnology and Genetic Research\n<br>\n<br>Introduction<br>In the realm of biotechnology and genetic research, <a href=\"https://www.staderlabs.com/\" class=\"text-primary\">Stader Labs</a> has emerged as a trailblazing company, pushing the boundaries of scientific innovation. With its cutting-edge technologies, interdisciplinary approach, and commitment to advancing human health, Stader Labs is revolutionizing the field of biotechnology. In this article, we will explore the intricacies of Stader Labs, delve into its unique features, and uncover how it is transforming the landscape of genetic research.\n<br>\n<br>The Importance of Biotechnology and Genetic Research<br>Biotechnology and genetic research play a crucial role in advancing our understanding of diseases, developing new therapies, and improving human health. These fields provide the foundation for groundbreaking discoveries, personalized medicine, and the potential to unlock the mysteries of the human genome.\n<br>\n<br>Understanding Stader Labs' Vision<br>Stader Labs is driven by a vision to revolutionize healthcare through the power of biotechnology. The company aims to leverage scientific advancements and genetic insights to develop innovative solutions that address unmet medical needs and improve patient outcomes. Stader Labs believes in the transformative potential of genetic research and its ability to pave the way for precision medicine.\n<br>\n<br>The Unique Features of Stader Labs<br>Stader Labs stands out in the field of biotechnology and genetic research due to its unique features:\n<br>\n<br>a. Interdisciplinary Collaboration: Stader Labs fosters collaboration between experts from diverse fields, including biology, genetics, computational biology, and data science. This interdisciplinary approach allows for the integration of various perspectives, leading to breakthrough discoveries and novel solutions.\n<br>\n<br>b. Advanced Genomic Sequencing: Stader Labs utilizes state-of-the-art genomic sequencing technologies to decode the genetic information of individuals. This enables precise identification of genetic variations, biomarkers, and disease-causing mutations, facilitating personalized treatment strategies and targeted therapies.\n<br>\n<br>c. Big Data Analysis: Stader Labs excels in analyzing and interpreting vast amounts of genomic data. By leveraging advanced computational algorithms and machine learning techniques, the company can uncover hidden patterns, identify genetic associations, and gain valuable insights into complex diseases.\n<br>\n<br>d. Therapeutic Development: Stader Labs is actively involved in developing innovative therapeutics and treatment modalities based on genetic research. By understanding the underlying genetic mechanisms of diseases, the company aims to create targeted therapies that offer improved efficacy and fewer side effects.\n<br>\n<br>Stader Labs' Contributions to Precision Medicine<br>Precision medicine, an emerging field that tailors medical treatments to individual patients based on their unique genetic makeup, holds immense promise. Stader Labs is at the forefront of precision medicine, making significant contributions through:\n<br>a. Genetic Testing: Stader Labs offers comprehensive genetic testing services, enabling healthcare providers to identify genetic predispositions, assess disease risks, and customize treatment plans based on individual patients' genetic profiles.\n<br>\n<br>b. Pharmacogenomics: Stader Labs explores the field of pharmacogenomics, which investigates how an individual's genetic variations influence their response to specific medications. This knowledge allows for the development of personalized drug regimens, optimizing treatment outcomes while minimizing adverse reactions.\n<br>\n<br>c. Disease Biomarkers: Stader Labs actively identifies disease biomarkers, specific genetic indicators that can help diagnose diseases at an early stage, monitor disease progression, and guide treatment decisions. By focusing on disease biomarkers, Stader Labs contributes to the development of non-invasive diagnostic tools and precision therapies.\n<br>\n<br>Ethical Considerations and Data Privacy<br>Stader Labs recognizes the importance of ethical considerations and data privacy in genetic research. The company adheres to stringent ethical guidelines and ensures that individuals' genetic information is handled with the utmost confidentiality and privacy. Stader Labs maintains robust data protection measures, complying with relevant regulations and industry best practices to safeguard sensitive information.\n<br>\n<br>The Future of Stader Labs<br>Stader Labs is poised to play a pivotal role in shaping the future of biotechnology and genetic research. The company continues to invest in cutting-edge technologies, forge partnerships with academic institutions and industry leaders, and expand its research and development capabilities. As scientific advancements accelerate and the field of genetics evolves, Stader Labs' vision of personalized medicine and improved healthcare outcomes holds tremendous potential.\n<br>\n<br>Conclusion<br>Stader Labs is leading the way in biotechnology and genetic research by pioneering innovative approaches, fostering interdisciplinary collaboration, and pushing the boundaries of scientific discovery. With its advanced genomic sequencing, big data analysis, and focus on precision medicine, Stader Labs is transforming the landscape of healthcare. By unraveling the mysteries of the human genome, Stader Labs seeks to revolutionize disease diagnosis, treatment, and prevention. As the field of biotechnology continues to advance, Stader Labs' vision and commitment to innovation hold the promise of improved patient outcomes, personalized therapies, and a brighter future for healthcare.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u0iOOAkZfg",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
